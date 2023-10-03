@@ -1,3 +1,65 @@
+
+// 1. Linear Search:
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+let key = 15;
+let index = -1;
+let flag = false;
+let count = 0;
+
+for (let i = 0; i < array.length; i++) {
+    count++;
+    // If element is in the array
+    if (array[i] === key) {
+        flag = true;
+        index = i;
+        break;
+    }
+}
+
+if (flag === true) {
+    console.log(`Count: ${count}, Index: ${index}`);
+} else {
+    console.log(`Count: ${count}, Index: -1`);
+}
+
+
+// 2. Binary(2) Search:
+
+
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+let lb = 0;
+let ub = arr.length;
+let mid = 0;
+let key1 = 15;
+let index1 = -1;
+let flag1 = false;
+let count1 = 0;
+
+while (lb < ub) {
+    count1++;
+    mid = (lb + ub) / 2;
+    mid = parseInt(mid);
+
+    if (arr1[mid] === key) {
+        flag1 = true;
+        index1 = mid;
+        break;
+    } else if (arr[mid] < key) {
+        lb = mid + 1;
+    } else {
+        ub = mid - 1;
+    }
+}
+
+if (flag === true) {
+    console.log(`Count: ${count1} Found, Index: ${index1}`);
+} else {
+    console.log(`Count: ${count1} Not Found, Index: ${index1}`);
+}
+
+
+
+
 //Question 1: Map Basics
 
 //question 1
